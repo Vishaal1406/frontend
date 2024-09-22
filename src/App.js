@@ -20,7 +20,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const parsedJson = JSON.parse(jsonInput);
-      const res = await axios.post('http://127.0.0.1:5000/bfhl', parsedJson);
+      const res = await axios.post('https://backend-07nl.onrender.com/bfhl', parsedJson);
       setResponse(res.data);
     } catch (error) {
       setErrorMessage('Invalid JSON input');
