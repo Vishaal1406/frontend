@@ -86,6 +86,9 @@ function App() {
   return (
     <div className="p-6 max-w-lg mx-auto bg-white rounded-lg shadow-md">
       <h1 className="text-2xl font-bold mb-4 text-center">Vishaal's Front End App</h1>
+      <p className="mb-4 text-gray-600">
+        Example input: {`{ "data": ["M", "1", "334", "4", "B", "Z", "a"], "email": "john_doe@srmist.edu.in", "roll_number": "RA12345678901234", "file_b64": "BASE_64_ENCODED_STRING" }`}</p>
+      <p className="mb-4 text-gray-600">The Mail should end with srmist.edu.in and the Roll number should be starting with RA followed by 14 digits</p>
       <input 
         type="text" 
         value={jsonInput} 
